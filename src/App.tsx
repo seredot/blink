@@ -1,24 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { useState, useEffect } from 'react';
+import Time from './Time';
+import Today from './Today';
+import DaysOfWeek from './DaysOfWeek';
+import TimeProgress from './TimeProgress';
 
 function App() {
+  const [time, setTime] = useState(new Date());
+  const hour = time.getHours();
+  const minute = time.getMinutes();
+  const separator = time.getSeconds() % 2 == 0;
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTime(new Date());
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <DaysOfWeek today={time} />
+      <Time hour={hour} minute={minute} separator={separator} />
+      <TimeProgress />
+      <Today today={time} />
     </div>
   );
 }
