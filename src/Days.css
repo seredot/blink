@@ -1,7 +1,9 @@
 .days-of-week {
     display: flex;
     flex-direction: column;
-    min-width: 5vw;
+    min-width: 3vw;
+    padding-left: 1em;
+    align-items: flex-end;
 }
 
 .day {
@@ -10,7 +12,7 @@
     align-items: center;
     width: 2em;
     height: 2em;
-    margin: 0.4vw auto;
+    margin: 0.5vh 0;
     border: 0.1em solid gray;
     color: gray;
 }

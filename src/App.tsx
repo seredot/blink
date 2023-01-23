@@ -23,7 +23,7 @@ function App() {
     <div className="app">
       <DaysOfWeek today={time} />
       <Time hour={hour} minute={minute} separator={separator} />
-      <TimeProgress />
+      <TimeProgress time={time} />
       <Today today={time} />
     </div>
   );

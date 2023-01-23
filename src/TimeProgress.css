@@ -1,0 +1,39 @@
+.time-progress {
+    display: flex;
+    flex-direction: column;
+    min-width: 3vw;
+    padding-right: 1em;
+    align-items: flex-start;
+}
+
+.hour-box {
+    display: flex;
+    width: 2em;
+    height: 1.42em;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    font-size: 1em;
+    font-weight: bolder;
+    border: 0.1em solid transparent;
+}
+
+.work-hour {
+    color: white;
+    border: 0.1em solid transparent;
+}
+
+.past-hour {
+    background-color: gray;
+    color: black;
+    border: 0.1em solid gray;
+}
+
+.work-hour.past-hour {
+    background-color: white;
+    border: 0.1em solid white;
+}
+
+.current-hour {
+    border: 0.1em solid white;
+}
