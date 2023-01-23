@@ -9,14 +9,6 @@
   color: white;
 }
 
-.middle {
-  display: flex;
-  flex-grow: 1;
-  flex-direction: column;
-  align-items: center;
-  height: 100vh;
-}
-
 .time {
   display: flex;
   flex-grow: 1;
@@ -36,28 +28,6 @@
   bottom: 0;
   align-items: center;
   font-size: 2em;
-}
-
-.days-of-week {
-  display: flex;
-  flex-direction: column;
-  min-width: 5vw;
-}
-
-.day {
-  display: flex;
-  align-self: flex-start;
-  margin: 0.4vw auto;
-  padding: 0.4vw;
-  border: 0.1em solid gray;
-  color: gray;
-  font-size: 1em;
-}
-
-.same-day {
-  background-color: white;
-  border-color: white;
-  color: black;
 }
 
 .time-progress {

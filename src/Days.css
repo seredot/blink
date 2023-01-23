@@ -1,0 +1,45 @@
+.days-of-week {
+    display: flex;
+    flex-direction: column;
+    min-width: 5vw;
+}
+
+.day {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2em;
+    height: 2em;
+    margin: 0.4vw auto;
+    border: 0.1em solid gray;
+    color: gray;
+}
+
+.day-of-week {
+    display: flex;
+    position: absolute;
+    font-size: 1.2em;
+    font-weight: bolder;
+    padding-top: 0.3em;
+    padding-right: 0.3em;
+}
+
+.day-of-month {
+    display: flex;
+    font-size: 0.7em;
+    padding: 0 0.08em;
+    align-self: flex-start;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.weekend {
+    background-color: gray;
+    color: black;
+}
+
+.same-day {
+    background-color: white;
+    border-color: white;
+    color: black;
+}

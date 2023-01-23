@@ -2,7 +2,7 @@ import './App.css';
 import { useState, useEffect } from 'react';
 import Time from './Time';
 import Today from './Today';
-import DaysOfWeek from './DaysOfWeek';
+import DaysOfWeek from './Days';
 import TimeProgress from './TimeProgress';
 
 function App() {
