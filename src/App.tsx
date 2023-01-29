@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import Time from './Time';
 import Today from './Today';
 import DaysOfWeek from './Days';
-import TimeProgress from './TimeProgress';
+import Progress from './Progress';
 
 function App() {
   const [time, setTime] = useState(new Date());
@@ -23,7 +23,7 @@ function App() {
     <div className="app">
       <DaysOfWeek today={time} />
       <Time hour={hour} minute={minute} separator={separator} />
-      <TimeProgress time={time} />
+      <Progress time={time} />
       <Today today={time} />
     </div>
   );

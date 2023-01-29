@@ -1,19 +1,20 @@
 .days-of-week {
     flex-direction: column;
-    height: 100%;
-    padding: 2em 0 2em 1em;
-    background-color: #222;
+    height: 100vh;
+    margin-left: 2vh;
+    padding: 4vh 0;
+    width: 8vh;
+    /* background-color: #222; */
+    justify-content: space-between;
 }
 
 .day {
-    position: relative;
-    flex: 1 0 auto;
-    align-items: center;
     margin: 0.5vh 0;
+    width: calc((100vh - 8vh - 14 * 1vh) / 14);
+    height: calc((100vh - 8vh - 14 * 1vh) / 14);
+    border: 0.075em solid white;
+    position: relative;
     padding: 0 0.2vh;
-    width: calc((100vh - 4em - 14 * 1vh) / 14);
-    height: calc((100vh - 4em - 14 * 1vh) / 14);
-    border: 0.1em solid white;
     color: gray;
     font-size: 4vh;
 }
@@ -31,17 +32,19 @@
 
 .day-of-week {
     align-self: flex-end;
-    font-size: 75%;
+    padding-left: 0.1vh;
+    padding-bottom: 0.2vh;
     font-weight: bolder;
+    font-size: 75%;
 }
 
 .day-of-month {
     position: absolute;
     align-self: flex-start;
     justify-content: end;
-    padding-top: 0.1vh;
+    padding-top: 0.2vh;
     left: 0;
     right: 0;
     width: 100%;
-    font-size: 50%;
+    font-size: 55%;
 }

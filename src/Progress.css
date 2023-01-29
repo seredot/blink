@@ -1,0 +1,56 @@
+.progress {
+    flex-direction: column;
+    height: 100vh;
+    margin-right: 2vh;
+    padding: 4vh 0;
+    width: 8vh;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.progress-hour {
+    margin: 0.25vh 0;
+    width: calc((100vh - 8vh - 24 * 0.5vh) / 12);
+    height: calc((100vh - 8vh - 24 * 0.5vh) / 24);
+}
+
+.progress-hour-text {
+    width: 50%;
+    justify-content: center;
+    align-self: center;
+    font-size: 1.75vh;
+    color: gray;
+}
+
+.progress-hour-blocks {
+    width: 50%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.progress-work-hour {
+    color: white;
+}
+
+.progress-current-hour {
+}
+
+.progress-block {
+    width: 30%;
+    height: 45%;
+    border: 1px solid white;
+}
+
+.progress-past-hour .progress-block {
+    border: none;
+}
+
+.progress-past-hour .progress-block {
+    background-color: gray;
+}
+
+.progress-work-hour.progress-past-hour .progress-block {
+    background-color: white;
+}
