@@ -1,38 +1,21 @@
 .days-of-week {
-    display: flex;
     flex-direction: column;
-    min-width: 3vw;
-    padding-left: 1em;
-    align-items: flex-end;
+    height: 100%;
+    padding: 2em 0 2em 1em;
+    background-color: #222;
 }
 
 .day {
-    display: flex;
-    justify-content: center;
+    position: relative;
+    flex: 1 0 auto;
     align-items: center;
-    width: 2em;
-    height: 2em;
     margin: 0.5vh 0;
-    border: 0.1em solid gray;
+    padding: 0 0.2vh;
+    width: calc((100vh - 4em - 14 * 1vh) / 14);
+    height: calc((100vh - 4em - 14 * 1vh) / 14);
+    border: 0.1em solid white;
     color: gray;
-}
-
-.day-of-week {
-    display: flex;
-    position: absolute;
-    font-size: 1.2em;
-    font-weight: bolder;
-    padding-top: 0.3em;
-    padding-right: 0.3em;
-}
-
-.day-of-month {
-    display: flex;
-    font-size: 0.7em;
-    padding: 0 0.08em;
-    align-self: flex-start;
-    justify-content: flex-end;
-    width: 100%;
+    font-size: 4vh;
 }
 
 .weekend {
@@ -44,4 +27,21 @@
     background-color: white;
     border-color: white;
     color: black;
+}
+
+.day-of-week {
+    align-self: flex-end;
+    font-size: 75%;
+    font-weight: bolder;
+}
+
+.day-of-month {
+    position: absolute;
+    align-self: flex-start;
+    justify-content: end;
+    padding-top: 0.1vh;
+    left: 0;
+    right: 0;
+    width: 100%;
+    font-size: 50%;
 }
