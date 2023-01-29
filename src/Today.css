@@ -1,0 +1,10 @@
+.today {
+    position: fixed;
+    margin-top: auto;
+    padding: 5vh 5vh;
+    max-width: 80vw;
+    bottom: 0;
+    align-items: center;
+    font-size: 5vh;
+    overflow: hidden;
+}

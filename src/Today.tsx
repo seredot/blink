@@ -1,3 +1,5 @@
+import './Today.css';
+
 interface TodayProps {
     today: Date;
 }
