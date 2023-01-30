@@ -34,11 +34,12 @@
   },
   "browserslist": {
     "production": [
-      ">0.2%",
+      "iOS>=9.0",
       "not dead",
       "not op_mini all"
     ],
     "development": [
+      "iOS>=9.0",
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"

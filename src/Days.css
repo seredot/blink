@@ -1,6 +1,5 @@
 .days-of-week {
     flex-direction: column;
-    height: 100vh;
     margin-left: 2vh;
     padding: 4vh 0;
     width: 8vh;
@@ -12,7 +11,7 @@
     margin: 0.5vh 0;
     width: calc((100vh - 8vh - 14 * 1vh) / 14);
     height: calc((100vh - 8vh - 14 * 1vh) / 14);
-    border: 0.075em solid white;
+    border: 0.075em solid gray;
     position: relative;
     padding: 0 0.2vh;
     color: gray;
@@ -21,6 +20,7 @@
 
 .weekend {
     background-color: gray;
+    border-color: transparent;
     color: black;
 }
 
@@ -41,7 +41,7 @@
 .day-of-month {
     position: absolute;
     align-self: flex-start;
-    justify-content: end;
+    justify-content: flex-end;
     padding-top: 0.2vh;
     left: 0;
     right: 0;

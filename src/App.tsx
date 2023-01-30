@@ -22,9 +22,11 @@ function App() {
   return (
     <div className="app">
       <DaysOfWeek today={time} />
-      <Time hour={hour} minute={minute} separator={separator} />
+      <div className="middle">
+        <Time hour={hour} minute={minute} separator={separator} />
+        <Today today={time} />
+      </div>
       <Progress time={time} />
-      <Today today={time} />
     </div>
   );
 }

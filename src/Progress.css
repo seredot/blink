@@ -1,6 +1,5 @@
 .progress {
     flex-direction: column;
-    height: 100vh;
     margin-right: 2vh;
     padding: 4vh 0;
     width: 8vh;
@@ -23,11 +22,12 @@
 }
 
 .progress-hour-blocks {
-    width: 50%;
+    flex: 1;
     flex-direction: row;
     flex-wrap: wrap;
-    align-content: space-between;
     justify-content: space-between;
+    /* compatibility */
+    height: 100%;
 }
 
 .progress-work-hour {

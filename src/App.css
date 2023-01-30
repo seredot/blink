@@ -2,10 +2,18 @@
   flex-grow: 1;
   align-items: center;
   justify-content: center;
-  height: 100vh;
   text-align: center;
   background-color: black;
   color: white;
+}
+
+.middle {
+  flex-grow: 1;
+  align-items: center;
+  flex-shrink: 0;
+  justify-items: flex-end;
+  position: relative;
+  height: 100vh;
 }
 
 .time {
