@@ -9,7 +9,7 @@ function App() {
   const [time, setTime] = useState(new Date());
   const hour = time.getHours();
   const minute = time.getMinutes();
-  const separator = time.getSeconds() % 2 == 0;
+  const blink = time.getSeconds() % 2 == 0;
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -23,10 +23,10 @@ function App() {
     <div className="app">
       <DaysOfWeek today={time} />
       <div className="middle">
-        <Time hour={hour} minute={minute} separator={separator} />
+        <Time hour={hour} minute={minute} separator={blink} />
         <Today today={time} />
       </div>
-      <Progress time={time} />
+      <Progress time={time} blink={blink} />
     </div>
   );
 }

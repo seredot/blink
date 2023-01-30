@@ -11,15 +11,15 @@
     margin: 0.5vh 0;
     width: calc((100vh - 8vh - 14 * 1vh) / 14);
     height: calc((100vh - 8vh - 14 * 1vh) / 14);
-    border: 0.075em solid gray;
+    border: 0.075em solid slategrey;
     position: relative;
     padding: 0 0.2vh;
-    color: gray;
+    color: slategrey;
     font-size: 4vh;
 }
 
 .weekend {
-    background-color: gray;
+    background-color: slategrey;
     border-color: transparent;
     color: black;
 }
