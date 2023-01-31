@@ -1,13 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
 
+html {
+  min-height: 100%;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
   vertical-align: baseline;
   line-height: 1;
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
+  background-color: black;
 }
 
 body {

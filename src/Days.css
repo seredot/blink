@@ -1,21 +1,21 @@
 .days-of-week {
     flex-direction: column;
-    margin-left: 2vh;
+    margin-left: calc(1vh + env(safe-area-inset-left));
     padding: 4vh 0;
-    width: 8vh;
+    width: 6vh;
     /* background-color: #222; */
     justify-content: space-between;
 }
 
 .day {
     margin: 0.5vh 0;
-    width: calc((100vh - 8vh - 14 * 1vh) / 14);
-    height: calc((100vh - 8vh - 14 * 1vh) / 14);
+    width: calc((100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom) - 8vh - 14 * 1vh) / 14);
+    height: calc((100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom) - 8vh - 14 * 1vh) / 14);
     border: 0.075em solid slategrey;
     position: relative;
     padding: 0 0.2vh;
     color: slategrey;
-    font-size: 4vh;
+    font-size: calc((100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom) - 8vh - 14 * 1vh) / 18);
 }
 
 .weekend {
