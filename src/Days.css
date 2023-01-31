@@ -8,6 +8,11 @@
 }
 
 .day {
+    /* compatibility */
+    width: calc((100vh - 8vh - 14 * 1vh) / 14);
+    height: calc((100vh - 8vh - 14 * 1vh) / 14);
+    font-size: calc((100vh - 8vh - 14 * 1vh) / 18);
+    /* normal values */
     margin: 0.5vh 0;
     width: calc((100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom) - 8vh - 14 * 1vh) / 14);
     height: calc((100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom) - 8vh - 14 * 1vh) / 14);
