@@ -14,7 +14,7 @@ const Progress = ({ time, blink }: ProgressProps) => {
     const block = (h: number, m: number) => {
         const past = currentHour > h || (currentHour == h && time.getMinutes() >= m);
         const currentBlock = past && currentHour == h && time.getMinutes() - m < 10;
-        const workHour = h > 8 && h < 19;
+        const workHour = h >= 9 && h < 18;
         return (
             <div className="progress-block-container">
                 <div className={cx([
