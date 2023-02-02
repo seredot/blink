@@ -3,9 +3,9 @@
     left: 0;
     right: 0;
     bottom: 0;
-    padding: 5vh 5vh;
+    padding: 5vh;
     align-items: center;
     justify-content: center;
-    font-size: 5vh;
+    font-size: 4vh;
     overflow: hidden;
 }

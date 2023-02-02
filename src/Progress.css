@@ -1,20 +1,15 @@
 .progress {
     flex-direction: column;
     margin-right: calc(1vh + env(safe-area-inset-left));
-    padding: 4vh 0;
-    width: 8vh;
+    width: 6vh;
     justify-content: space-between;
     align-items: flex-end;
 }
 
 .progress-hour {
-    /* compatibility */
-    width: calc((100vh - 8vh - 24 * 0.5vh) / 12);
-    height: calc((100vh - 8vh - 24 * 0.5vh) / 24);
-    /* normal values */
     margin: 0.25vh 0;
-    width: calc((100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom) - 8vh - 24 * 0.5vh) / 12);
-    height: calc((100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom) - 8vh - 24 * 0.5vh) / 24);
+    width: calc((70vh - 24 * 0.5vh) / 12);
+    height: calc((70vh - 24 * 0.5vh) / 24);
 }
 
 .progress-hour-text {

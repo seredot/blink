@@ -1,26 +1,19 @@
 .days-of-week {
     flex-direction: column;
     margin-left: calc(1vh + env(safe-area-inset-left));
-    padding: 4vh 0;
     width: 6vh;
-    /* background-color: #222; */
     justify-content: space-between;
 }
 
 .day {
-    /* compatibility */
-    width: calc((100vh - 8vh - 14 * 1vh) / 14);
-    height: calc((100vh - 8vh - 14 * 1vh) / 14);
-    font-size: calc((100vh - 8vh - 14 * 1vh) / 18);
-    /* normal values */
     margin: 0.5vh 0;
-    width: calc((100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom) - 8vh - 14 * 1vh) / 14);
-    height: calc((100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom) - 8vh - 14 * 1vh) / 14);
+    width: calc((70vh - 14 * 1vh) / 14);
+    height: calc((70vh - 14 * 1vh) / 14);
     border: 0.075em solid slategrey;
     position: relative;
     padding: 0 0.2vh;
     color: slategrey;
-    font-size: calc((100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom) - 8vh - 14 * 1vh) / 18);
+    font-size: calc((70vh - 14 * 1vh) / 18);
 }
 
 .weekend {
