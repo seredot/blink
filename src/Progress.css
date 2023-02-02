@@ -7,9 +7,9 @@
 }
 
 .progress-hour {
-    margin: 0.25vh 0;
-    width: calc((70vh - 24 * 0.5vh) / 12);
-    height: calc((70vh - 24 * 0.5vh) / 24);
+    margin-bottom: 0.5vh;
+    width: calc((75vh - 24 * 0.5vh) / 12);
+    height: calc((75vh - 24 * 0.5vh) / 24);
 }
 
 .progress-hour-text {

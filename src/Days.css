@@ -6,14 +6,14 @@
 }
 
 .day {
-    margin: 0.5vh 0;
-    width: calc((70vh - 14 * 1vh) / 14);
-    height: calc((70vh - 14 * 1vh) / 14);
+    margin-bottom: 1vh;
+    width: calc((75vh - 14 * 1vh) / 14);
+    height: calc((75vh - 14 * 1vh) / 14);
     border: 0.075em solid slategrey;
     position: relative;
     padding: 0 0.2vh;
     color: slategrey;
-    font-size: calc((70vh - 14 * 1vh) / 18);
+    font-size: calc((75vh - 14 * 1vh) / 18);
 }
 
 .weekend {
